@@ -8,6 +8,7 @@
 //! difficult, and it means you have to make this object a global static mut
 //! that the interrupt can access, which is unsafe.
 
+#![feature(const_fn_trait_bound)]
 #![cfg_attr(not(test), no_std)]
 #[cfg(test)]
 extern crate std as core;
